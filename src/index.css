@@ -35,32 +35,33 @@ body {
     src: url("/fonts/Nominee-Medium.ttf") format("truetype");
 }
 
-.font-redzone {
+/* .font-redzone {
     font-family: "Redzone";
 }
 
 .font-nominee {
     font-family: "Nominee";
-}
+} */
 
-.col {
-    @apply flex flex-col flex-wrap;
-}
+@layer {
+    .col {
+        @apply flex flex-col flex-wrap;
+    }
 
-.row {
-    @apply flex flex-row flex-wrap;
-}
+    .row {
+        @apply flex flex-row flex-wrap;
+    }
 
-.center {
-    @apply items-center justify-center;
+    .center {
+        @apply items-center justify-center;
+    }
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
 }
 
 button {
     @apply active:scale-90 transition-transform duration-200;
-}
-
-.screen {
-    /* @apply min-h-[60dvh]; */
 }
 
 .round-gradient {

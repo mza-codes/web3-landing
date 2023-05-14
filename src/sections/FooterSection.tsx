@@ -31,7 +31,7 @@ export default function FooterSection() {
                 </span>
             </div>
             {/* Right Section */}
-            <div className="row gap-24">
+            <div className="row md:gap-24 gap-6">
                 {links.map((group, i) => (
                     <div key={i} className="col gap-2">
                         {group.map((link, i) =>

@@ -1,3 +1,5 @@
+import Heading from "../components/Heading";
+
 const tags = [
     "Wide range of platforms",
     "World class artists",
@@ -7,12 +9,13 @@ const tags = [
 
 export default function AboutSection() {
     return (
-        <section className="w-full flex flex-col-reverse md:flex-row-reverse gap-4">
-            <div className="text md:w-1/2 col gap-4">
-                <span className="text-xl font-redzone text-app">About Us</span>
-                <h1 className="text-6xl font-redzone">
-                    Discover more Collect And Sell Rare NFTs
-                </h1>
+        <section className="w-full flex flex-col-reverse md:flex-row-reverse items-center">
+            <div className="text md:w-1/2 col gap-4 my-2">
+                <Heading
+                    className="max-w-[90%]"
+                    heading="About Us"
+                    subHeading="Discover more Collect And Sell Rare NFTs"
+                />
                 <span className="text-gray-400 leading-8 text-xl">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, eum
                     praesentium? Numquam officiis totam consequuntur dignissimos alias,
@@ -29,11 +32,11 @@ export default function AboutSection() {
                     ))}
                 </div>
             </div>
-            <div className="md:w-1/2 col gap-4 center">
+            <div className="md:w-1/2 my-2 h-full">
                 <img
                     src="/assets/robo.png"
                     alt="robo"
-                    className="object-contain max-w-[80%] max-h-[70%]"
+                    className="object-contain max-w-[80%] max-h-[90%] mx-auto"
                 />
             </div>
         </section>
