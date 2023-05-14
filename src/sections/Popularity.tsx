@@ -48,7 +48,7 @@ export default function Popularity() {
                 {cards.map((content, i) => (
                     <div
                         key={i}
-                        className={`flex-1 ${
+                        className={`flex-1 min-w-[200px] ${
                             i !== cards.length - 1 && "md:border-r-2 md:border-app_bg"
                         }`}
                     >

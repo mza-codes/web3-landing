@@ -32,24 +32,23 @@ export default function FooterSection() {
             </div>
             {/* Right Section */}
             <div className="row md:gap-24 gap-6">
-                {links.map((group, i) => (
-                    <div key={i} className="col gap-2">
-                        {group.map((link, i) =>
-                            i === 0 ? (
-                                <span key={link} className="font-redzone mb-2">
-                                    {link}
-                                </span>
-                            ) : (
-                                <a
-                                    key={link}
-                                    href={`#${link}`}
-                                    className={`font-nominee text-gray-400 text-xs hover:text-white`}
-                                >
-                                    {link}
-                                </a>
-                            )
-                        )}
-                    </div>
+                {links.map((group, idx) => (
+                    <ul key={idx + 1} className="col gap-2">
+                        {group.map((link, i) => (
+                            <li key={link}>
+                                {i === 0 ? (
+                                    <span className="font-redzone mb-2">{link}</span>
+                                ) : (
+                                    <a
+                                        href={`#${link}`}
+                                        className={`font-nominee text-gray-400 text-xs hover:text-white`}
+                                    >
+                                        {link}
+                                    </a>
+                                )}
+                            </li>
+                        ))}
+                    </ul>
                 ))}
             </div>
         </footer>
