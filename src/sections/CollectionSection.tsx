@@ -12,7 +12,7 @@ export default function CollectionSection() {
                 </span>
                 <Button outline>View on Opensea</Button>
             </div>
-            <div className="flex-[2] overflow-auto scroll-p-6 no-scrollbar inline-flex flex-row gap-4">
+            <div className="flex-[2] overflow-x-scroll flex-grow max-w-[90vw] no-scrollbar inline-flex flex-row gap-4">
                 {[1, 2, 3, 1, 2].map((n, i) => (
                     <div className="min-w-[200px] rounded-md" key={i}>
                         <img
