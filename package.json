@@ -1,28 +1,30 @@
 {
-  "name": "github-viewer",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview",
-    "deploy": "npx tailwindcss build src/index.css -o build.css && yarn build"
-  },
-  "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
-  },
-  "devDependencies": {
-    "@types/react": "^18.0.26",
-    "@types/react-dom": "^18.0.9",
-    "@vitejs/plugin-react": "^3.0.0",
-    "autoprefixer": "^10.4.13",
-    "axios": "^1.2.2",
-    "postcss": "^8.4.20",
-    "sass": "^1.57.1",
-    "tailwindcss": "^3.2.4",
-    "typescript": "^4.9.3",
-    "vite": "^4.0.0"
-  }
+    "name": "web3-landing",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "tsc && vite build",
+        "preview": "vite preview",
+        "deploy": "npx tailwindcss build src/index.css -o build.css && yarn build"
+    },
+    "dependencies": {
+        "framer-motion": "^10.12.10",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-icons": "^4.8.0"
+    },
+    "devDependencies": {
+        "@types/react": "^18.0.26",
+        "@types/react-dom": "^18.0.9",
+        "@vitejs/plugin-react": "^3.0.0",
+        "autoprefixer": "^10.4.13",
+        "axios": "^1.2.2",
+        "postcss": "^8.4.20",
+        "sass": "^1.57.1",
+        "tailwindcss": "^3.2.4",
+        "typescript": "^4.9.3",
+        "vite": "^4.0.0"
+    }
 }
