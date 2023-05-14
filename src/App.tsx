@@ -7,6 +7,7 @@ import FeaturesSection from "./sections/FeaturesSection";
 import FooterSection from "./sections/FooterSection";
 import MainSection from "./sections/MainSection";
 import Popularity from "./sections/Popularity";
+import PromoSection from "./sections/PromoSection";
 
 function App() {
     return (
@@ -19,7 +20,7 @@ function App() {
                 <FeaturesSection />
                 <CollectionSection />
                 <FAQSection />
-                {/* TODO */}
+                <PromoSection />
                 <FooterSection />
             </section>
         </main>
