@@ -1,4 +1,5 @@
 import Heading from "../components/Heading";
+import { SectionProps } from "../types";
 
 const tags = [
     "Wide range of platforms",
@@ -7,9 +8,12 @@ const tags = [
     "Fast payments",
 ];
 
-export default function AboutSection() {
+export default function AboutSection(props: SectionProps) {
     return (
-        <section className="w-full flex flex-col-reverse md:flex-row-reverse items-center">
+        <section
+            {...props}
+            className="w-full flex flex-col-reverse md:flex-row-reverse items-center"
+        >
             <div className="text md:w-1/2 col gap-4 my-2">
                 <Heading
                     className="max-w-[90%]"

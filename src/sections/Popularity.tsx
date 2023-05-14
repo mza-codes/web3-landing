@@ -2,6 +2,7 @@ import Card, { CardProps } from "../components/sub-components/Card";
 import { MdOutlineVerifiedUser } from "react-icons/md";
 import { RiWallet3Line } from "react-icons/ri";
 import { AiOutlineCheckCircle } from "react-icons/ai";
+import { routes } from "../constants";
 
 const values = [
     { value: "1.5", label: "Collections" },
@@ -32,7 +33,7 @@ const cards: CardProps[] = [
 
 export default function Popularity() {
     return (
-        <section className="bg-white/10 rounded-3xl col w-full">
+        <section id={routes.popular} className="bg-white/10 rounded-3xl col w-full">
             <div className="px-4 row border-b-2 border-app_bg py-6 items-center justify-around gap-4">
                 {values.map((it, i) => (
                     <div key={i}>

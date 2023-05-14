@@ -1,4 +1,5 @@
 import Header from "./components/Header";
+import { routes } from "./constants";
 
 import AboutSection from "./sections/AboutSection";
 import CollectionSection from "./sections/CollectionSection";
@@ -17,7 +18,7 @@ function App() {
                 <Header />
                 <MainSection />
                 <Popularity />
-                <AboutSection />
+                <AboutSection id={routes.about} />
                 <FeaturesSection />
                 <CollectionSection />
                 <FAQSection />

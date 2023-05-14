@@ -1,6 +1,7 @@
 import { AiOutlineTwitter } from "react-icons/ai";
 import { FaGithub, FaBitcoin } from "react-icons/fa";
 import { RiDiscordFill } from "react-icons/ri";
+import { appLinks, routes } from "../constants";
 
 const socialIcons = [AiOutlineTwitter, FaBitcoin, RiDiscordFill, FaGithub];
 
@@ -12,7 +13,7 @@ const links = [
 
 export default function FooterSection() {
     return (
-        <footer className="relative w-full row gap-4 justify-between">
+        <footer id={routes.footer} className="relative w-full row gap-4 justify-between">
             {/* Left Section */}
             <div className="col gap-4 min-w-[200px] justify-between">
                 <div className="space-y-6">
@@ -40,7 +41,7 @@ export default function FooterSection() {
                                     <span className="font-redzone mb-2">{link}</span>
                                 ) : (
                                     <a
-                                        href={`#${link}`}
+                                        href={`#${appLinks[i]}`}
                                         className={`font-nominee text-gray-400 text-xs hover:text-white`}
                                     >
                                         {link}
