@@ -16,7 +16,7 @@ function App() {
             <section className="max-w-6xl xl:px-0 px-4 flex center col mx-auto pb-8 md:gap-36 gap-12">
                 <div className="fixed inset-0 round-gradient"></div>
                 <Header />
-                <MainSection />
+                <MainSection id={routes.home} />
                 <Popularity />
                 <AboutSection id={routes.about} />
                 <FeaturesSection />
