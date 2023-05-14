@@ -19,7 +19,9 @@ export default function FooterSection() {
                     <h3 className="font-redzone text-4xl">Space.</h3>
                     <div className="row gap-4">
                         {socialIcons.map((Icon, i) => (
-                            <Icon key={i} size={18} color="#fff" />
+                            <a href="#" className="hover:text-white/50 text-white">
+                                <Icon key={i} size={18} color="inherit" />
+                            </a>
                         ))}
                     </div>
                 </div>
@@ -31,7 +33,7 @@ export default function FooterSection() {
             {/* Right Section */}
             <div className="row gap-24">
                 {links.map((link, i) => (
-                    <div className="col gap-2">
+                    <div key={i} className="col gap-2">
                         {link.map((l, i) => (
                             <a
                                 key={l}

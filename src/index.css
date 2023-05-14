@@ -15,8 +15,12 @@
     border: 1px solid #ccc;
 }
 
+body {
+    @apply bg-app_bg;
+}
+
 .app-bg {
-    @apply bg-[#1d1b27] text-[var(--main-text)];
+    @apply text-[var(--main-text)];
 }
 
 @font-face {
@@ -54,5 +58,13 @@ button {
 }
 
 .screen {
-    @apply min-h-[60dvh];
+    /* @apply min-h-[60dvh]; */
+}
+
+.round-gradient {
+    z-index: -1;
+    /* min-height: 100dvh; */
+    /* background: radial-gradient(#9500b3, #56b1fc, transparent); */
+    /* background: radial-gradient(circle at top right, #292442, #330e3a, #1d1b27); */
+    background: radial-gradient(circle at top right, #292442, #1d1b27);
 }
