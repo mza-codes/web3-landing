@@ -52,3 +52,7 @@
 button {
     @apply active:scale-90 transition-transform duration-200;
 }
+
+.screen {
+    @apply min-h-[60dvh];
+}

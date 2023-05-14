@@ -2,7 +2,7 @@ import Button from "../components/Button";
 
 export default function MainSection() {
     return (
-        <section className="w-full flex flex-col md:flex-row min-h-[80dvh] center">
+        <section className="w-full flex flex-col md:flex-row screen center">
             <div className="text w-1/2 col gap-8">
                 <h1 className="text-8xl font-redzone">
                     Discover Collect Sell Digital NFT.

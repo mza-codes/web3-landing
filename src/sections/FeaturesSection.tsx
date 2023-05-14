@@ -25,7 +25,10 @@ export default function FeaturesSection() {
             </div>
             <div className="row w-full justify-center gap-6">
                 {cards.map((card) => (
-                    <div className="bg-gradient-to-br  from-white/10 col rounded-2xl items-start gap-4 py-6 px-4 flex-1">
+                    <div
+                        key={card.id}
+                        className="bg-gradient-to-br  from-white/10 col rounded-2xl items-start gap-4 py-6 px-4 flex-1"
+                    >
                         <img
                             className="w-16 h-w-16"
                             src={`/assets/${card.id}.png`}

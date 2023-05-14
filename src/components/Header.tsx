@@ -12,8 +12,8 @@ export default function Header() {
                 <div className="ml-24 row gap-8">
                     {links.map((li, i) => (
                         <a
-                            href="#"
                             key={i}
+                            href="#"
                             className={`uppercase font-redzone ${
                                 i === 0 ? "font-medium" : ""
                             }`}
