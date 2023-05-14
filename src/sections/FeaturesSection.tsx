@@ -1,3 +1,5 @@
+import Heading from "../components/Heading";
+
 const cards = [
     {
         id: 1,
@@ -19,10 +21,11 @@ const cards = [
 export default function FeaturesSection() {
     return (
         <div className="w-full col center gap-4">
-            <div className="text-center">
-                <h4 className="font-redzone text-app text-xl">Key Features</h4>
-                <h2 className="font-redzone text-4xl">Access The Future</h2>
-            </div>
+            <Heading
+                heading="Key Features"
+                subHeading="Access The Future"
+                className="text-center"
+            />
             <div className="row w-full justify-center gap-6">
                 {cards.map((card) => (
                     <div
