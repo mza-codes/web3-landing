@@ -1,8 +1,9 @@
 import Button from "../components/Button";
+import { SectionProps } from "../types";
 
-export default function MainSection() {
+export default function MainSection(props: SectionProps) {
     return (
-        <section className="w-full flex flex-col md:flex-row center gap-8">
+        <section {...props} className="w-full flex flex-col md:flex-row center gap-8">
             <div className="text md:w-1/2 col gap-8">
                 <h1 className="md:text-8xl text-5xl font-redzone">
                     Discover Collect Sell Digital NFT.

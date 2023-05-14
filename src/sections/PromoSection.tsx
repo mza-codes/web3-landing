@@ -1,8 +1,9 @@
 import Button from "../components/Button";
+import { routes } from "../constants";
 
 export default function PromoSection() {
     return (
-        <section className="w-full">
+        <section id={routes.promo} className="w-full">
             <div className="relative bg-gradient-to-bl from-sky-700 via-purple-700 to-blue-800 rounded-3xl p-3 md:p-0 min-h-[394px] row justify-around">
                 <img
                     className="object-scale-down max-w-[200px] sm:max-w-sm max-h-[inherit] overflow-hidden"

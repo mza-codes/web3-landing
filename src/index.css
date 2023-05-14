@@ -71,3 +71,16 @@ button {
     /* background: radial-gradient(circle at top right, #292442, #330e3a, #1d1b27); */
     background: radial-gradient(circle at top right, #292442, #1d1b27);
 }
+
+.app-logo {
+    background: linear-gradient(
+        135deg,
+        rgba(33, 150, 243, 1) 10%,
+        rgba(218, 112, 214, 1) 30%,
+        rgba(255, 255, 255, 1) 90%,
+        rgba(255, 255, 255, 0.705) 2%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
