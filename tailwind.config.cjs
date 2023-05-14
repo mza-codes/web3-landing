@@ -11,6 +11,7 @@ module.exports = {
             },
             colors: {
                 app: "#65d6f4",
+                app_bg: "#1d1b27",
             },
         },
         fontFamily: {

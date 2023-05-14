@@ -19,7 +19,9 @@ export default function FooterSection() {
                     <h3 className="font-redzone text-4xl">Space.</h3>
                     <div className="row gap-4">
                         {socialIcons.map((Icon, i) => (
-                            <Icon key={i} size={18} color="#fff" />
+                            <a href="#" className="hover:text-white/50 text-white">
+                                <Icon key={i} size={18} color="inherit" />
+                            </a>
                         ))}
                     </div>
                 </div>
@@ -30,21 +32,23 @@ export default function FooterSection() {
             </div>
             {/* Right Section */}
             <div className="row gap-24">
-                {links.map((link, i) => (
-                    <div className="col gap-2">
-                        {link.map((l, i) => (
-                            <a
-                                key={l}
-                                href="#"
-                                className={`${
-                                    i === 0
-                                        ? "font-redzone mb-2"
-                                        : "font-nominee text-gray-400 text-xs"
-                                }`}
-                            >
-                                {l}
-                            </a>
-                        ))}
+                {links.map((group, i) => (
+                    <div key={i} className="col gap-2">
+                        {group.map((link, i) =>
+                            i === 0 ? (
+                                <span key={link} className="font-redzone mb-2">
+                                    {link}
+                                </span>
+                            ) : (
+                                <a
+                                    key={link}
+                                    href={`#${link}`}
+                                    className={`font-nominee text-gray-400 text-xs hover:text-white`}
+                                >
+                                    {link}
+                                </a>
+                            )
+                        )}
                     </div>
                 ))}
             </div>

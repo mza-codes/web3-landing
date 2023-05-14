@@ -2,7 +2,7 @@ import Button from "../components/Button";
 
 export default function CollectionSection() {
     return (
-        <div className="w-full row gap-4 items-center">
+        <div className="w-full flex flex-col md:flex-row gap-4 items-center overflow-hidden">
             <div className="flex-[1] text-start col gap-4 items-start pr-4">
                 <h4 className="font-redzone text-app text-xl">Collection</h4>
                 <h2 className="font-redzone text-4xl">Bored apes NFT Items</h2>

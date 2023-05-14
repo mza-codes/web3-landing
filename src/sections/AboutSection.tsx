@@ -7,8 +7,8 @@ const tags = [
 
 export default function AboutSection() {
     return (
-        <section className="w-full flex flex-col-reverse md:flex-row-reverse screen center">
-            <div className="text w-1/2 col gap-4">
+        <section className="w-full flex flex-col-reverse md:flex-row-reverse gap-4">
+            <div className="text md:w-1/2 col gap-4">
                 <span className="text-xl font-redzone text-app">About Us</span>
                 <h1 className="text-6xl font-redzone">
                     Discover more Collect And Sell Rare NFTs
@@ -29,7 +29,7 @@ export default function AboutSection() {
                     ))}
                 </div>
             </div>
-            <div className="image w-1/2">
+            <div className="md:w-1/2 col gap-4 center">
                 <img
                     src="/assets/robo.png"
                     alt="robo"
