@@ -5,7 +5,7 @@ export default function PromoSection() {
         <section className="w-full pt-28">
             <div className="relative bg-gradient-to-bl from-sky-700 via-purple-700 to-blue-800 rounded-3xl h-[394px]">
                 <img
-                    className="object-scale-down max-w-[200px] sm:max-w-sm max-h-[inherit] absolute left-32 scale-150 -top-24 "
+                    className="object-scale-down max-w-[200px] sm:max-w-sm max-h-[inherit] absolute left-4 md:left-32 scale-150 -top-24 "
                     src="/assets/vr-person.webp"
                     alt="vr_person"
                 />

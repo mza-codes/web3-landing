@@ -3,9 +3,9 @@ import Button from "../components/Button";
 export default function MainSection() {
     return (
         <>
-            <section className="w-full flex flex-col md:flex-row center">
-                <div className="text w-1/2 col gap-8">
-                    <h1 className="text-8xl font-redzone">
+            <section className="w-full flex flex-col md:flex-row center gap-8">
+                <div className="text md:w-1/2 col gap-8">
+                    <h1 className="md:text-8xl text-5xl font-redzone">
                         Discover Collect Sell Digital NFT.
                     </h1>
                     <span className="text-gray-400 leading-8 text-xl">
@@ -17,7 +17,7 @@ export default function MainSection() {
                         <Button outline={true}>Join Discord</Button>
                     </div>
                 </div>
-                <div className="relative w-1/2 col gap-4 center">
+                <div className="relative md:w-1/2 col gap-4 center">
                     <img
                         src="/assets/etherum.png"
                         alt="etherum_logo"

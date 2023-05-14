@@ -27,7 +27,7 @@ export default function FeaturesSection() {
                 {cards.map((card) => (
                     <div
                         key={card.id}
-                        className="bg-gradient-to-br  from-white/10 col rounded-2xl items-start gap-4 py-6 px-4 flex-1"
+                        className="bg-gradient-to-br from-white/10 col rounded-2xl items-start gap-4 py-6 px-4 md:flex-1"
                     >
                         <img
                             className="w-16 h-w-16"
