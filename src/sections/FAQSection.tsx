@@ -1,6 +1,5 @@
 import Heading from "../components/Heading";
 import QAComponent, { QAProps } from "../components/Q&A";
-import { routes } from "../constants";
 
 const questions: QAProps[] = [
     {
@@ -32,7 +31,7 @@ const questions: QAProps[] = [
 
 export default function FAQSection() {
     return (
-        <section id={routes.faq} className="w-full col gap-4">
+        <section className="w-full col gap-4">
             <Heading
                 className="text-center"
                 heading="FAQs"

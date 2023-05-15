@@ -1,5 +1,4 @@
 import Heading from "../components/Heading";
-import { routes } from "../constants";
 
 const cards = [
     {
@@ -21,7 +20,7 @@ const cards = [
 
 export default function FeaturesSection() {
     return (
-        <section id={routes.features} className="w-full col center gap-4">
+        <section className="w-full col center gap-4">
             <Heading
                 heading="Key Features"
                 subHeading="Access The Future"
