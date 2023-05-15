@@ -20,8 +20,12 @@ export default function FooterSection() {
                     <h3 className="font-redzone text-4xl">Space.</h3>
                     <div className="row gap-4">
                         {socialIcons.map((Icon, i) => (
-                            <a href="#" className="hover:text-white/50 text-white">
-                                <Icon key={i} size={18} color="inherit" />
+                            <a
+                                key={i}
+                                href="#"
+                                className="hover:text-white/50 text-white"
+                            >
+                                <Icon size={18} color="inherit" />
                             </a>
                         ))}
                     </div>

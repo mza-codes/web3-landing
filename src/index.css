@@ -64,12 +64,19 @@ button {
     @apply active:scale-90 transition-transform duration-200;
 }
 
+/* THEME */
+
 .round-gradient {
     z-index: -1;
     /* min-height: 100dvh; */
     /* background: radial-gradient(#9500b3, #56b1fc, transparent); */
     /* background: radial-gradient(circle at top right, #292442, #330e3a, #1d1b27); */
+
     background: radial-gradient(circle at top right, #292442, #1d1b27);
+}
+
+.light.round-gradient {
+    background: radial-gradient(circle at top right, #2b0a38, #1c192b);
 }
 
 .app-logo {
