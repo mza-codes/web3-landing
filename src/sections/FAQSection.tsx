@@ -37,13 +37,20 @@ export default function FAQSection() {
                 heading="FAQs"
                 subHeading="Frequently asked Questions"
             />
-            <div className="flex flex-row flex-wrap mt-6">
+
+            <div className="grid grid-cols-1 md:grid-cols-2 place-items-start mt-6">
+                {questions.map((prop, i) => (
+                    <QAComponent key={i} {...prop} />
+                ))}
+            </div>
+
+            {/* <div className="flex flex-row flex-wrap mt-6">
                 {questions.map((prop, i) => (
                     <div key={i} className="flex-[100%] md:flex-[50%]">
                         <QAComponent {...prop} />
                     </div>
                 ))}
-            </div>
+            </div> */}
         </section>
     );
 }

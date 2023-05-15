@@ -1,5 +1,4 @@
-import { AnimatePresence, motion } from "framer-motion";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
 
 export type QAProps = {
@@ -13,6 +12,13 @@ doloremque reprehenderit!`;
 
 export default function QAComponent({ question, answer }: QAProps) {
     const [isOpen, setIsOpen] = useState(false);
+    const contentRef = useRef<HTMLDivElement>(null);
+    const [contentHeight, setContentHeight] = useState<number>();
+
+    useEffect(() => {
+        if (isOpen) setContentHeight(contentRef.current?.scrollHeight);
+        else setContentHeight(0);
+    }, [isOpen]);
 
     const styles = {
         bg: isOpen ? "bg-app" : "",
@@ -23,16 +29,15 @@ export default function QAComponent({ question, answer }: QAProps) {
         ) : (
             <AiOutlinePlus size={24} color="inherit" />
         ),
+        contentStyle: {
+            maxHeight: isOpen ? contentHeight : 0,
+            opacity: isOpen ? 1 : 0,
+            transition: "max-height 300ms ease-in-out, opacity 300ms ease-in-out",
+        },
     };
 
     return (
-        <motion.div
-            initial={{ opacity: 0, translateX: "-40%" }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.36 }}
-            whileInView={{ opacity: 1, translateX: 0 }}
-            className="bg-white/20 rounded-3xl col m-2"
-        >
+        <div className="relative bg-white/20 rounded-3xl col m-2 transition-all duration-500 ease-in-out">
             <div
                 className={`row justify-between gap-2 px-4 py-3 rounded-t-3xl ${styles.bg}`}
             >
@@ -45,20 +50,11 @@ export default function QAComponent({ question, answer }: QAProps) {
                     {styles.icon}
                 </button>
             </div>
-            <AnimatePresence>
-                {isOpen && (
-                    <motion.div
-                        transition={{ duration: 0.3 }}
-                        initial={{ opacity: 0, translateY: "-30%" }}
-                        whileInView={{ opacity: 1, translateY: "0%" }}
-                        viewport={{ once: true }}
-                        exit={{ opacity: 0, translateY: "-30%" }}
-                        className="content py-4 px-4"
-                    >
-                        {answer ?? dummyAnswer}
-                    </motion.div>
-                )}
-            </AnimatePresence>
-        </motion.div>
+            <div className="overflow-hidden" style={styles.contentStyle}>
+                <div className="py-4 px-4" ref={contentRef}>
+                    {answer ?? dummyAnswer}
+                </div>
+            </div>
+        </div>
     );
 }
