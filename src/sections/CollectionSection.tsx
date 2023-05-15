@@ -1,13 +1,9 @@
 import Button from "../components/Button";
 import Heading from "../components/Heading";
-import { routes } from "../constants";
 
 export default function CollectionSection() {
     return (
-        <section
-            id={routes.collection}
-            className="w-full flex flex-col md:flex-row gap-4 items-center"
-        >
+        <section className="w-full flex flex-col md:flex-row gap-4 items-center">
             <div className="flex-[1] text-start col gap-4 items-start pr-4">
                 <Heading heading="Collection" subHeading="Bored apes NFT Items" />
                 <span className="text-gray-400/60">
