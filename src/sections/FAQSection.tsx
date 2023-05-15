@@ -38,7 +38,7 @@ export default function FAQSection() {
                 heading="FAQs"
                 subHeading="Frequently asked Questions"
             />
-            <div className="row mt-6 transition-all duration-500 ease-in-out">
+            <div className="flex flex-row flex-wrap mt-6">
                 {questions.map((prop, i) => (
                     <div key={i} className="flex-[100%] md:flex-[50%]">
                         <QAComponent {...prop} />

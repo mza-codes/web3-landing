@@ -14,7 +14,7 @@ function App() {
     return (
         <main className="app-bg min-h-[100dvh]">
             <section className="max-w-6xl xl:px-0 px-4 flex center col mx-auto pb-8 md:gap-36 gap-12">
-                <div className="fixed inset-0 round-gradient"></div>
+                <div id="app-body" className="fixed inset-0 round-gradient"></div>
                 <Header />
                 <MainSection id={routes.home} />
                 <Popularity />
