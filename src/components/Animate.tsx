@@ -15,7 +15,7 @@ export default function Animate({ children, id, n }: Props) {
             initial={{ opacity: 0, translateX: `${isEven(n) ? "-" : ""}100%` }}
             whileInView={{ opacity: 1, translateX: "0%" }}
             viewport={{ once: true }}
-            transition={{ duration: 1.4 }}
+            transition={{ duration: 1.2 }}
         >
             {children}
         </motion.section>
