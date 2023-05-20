@@ -31,7 +31,7 @@ export default function FooterSection() {
                     </div>
                 </div>
 
-                <span className="text-gray-400 text-sm">
+                <span className="text-app_gray text-sm">
                     All rights reserved &#169; <b>{new Date().getFullYear()}.</b>
                 </span>
             </div>
@@ -46,7 +46,7 @@ export default function FooterSection() {
                                 ) : (
                                     <a
                                         href={`#${appLinks[i]}`}
-                                        className={`font-nominee text-gray-400 text-xs hover:text-white`}
+                                        className={`font-nominee text-app_gray text-xs hover:text-white`}
                                     >
                                         {link}
                                     </a>

@@ -17,7 +17,7 @@ export default function AboutSection() {
                     heading="About Us"
                     subHeading="Discover more Collect And Sell Rare NFTs"
                 />
-                <span className="text-gray-400 leading-8 text-xl">
+                <span className="text-app_gray/80 leading-8 text-xl">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, eum
                     praesentium? Numquam officiis totam consequuntur dignissimos alias,
                     quae autem!

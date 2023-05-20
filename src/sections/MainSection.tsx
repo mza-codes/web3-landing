@@ -7,7 +7,7 @@ export default function MainSection() {
                 <h1 className="md:text-8xl text-5xl font-redzone">
                     Discover Collect Sell Digital NFT.
                 </h1>
-                <span className="text-gray-400 leading-8 text-xl">
+                <span className="text-app_gray leading-8 text-xl">
                     Generate 10,000+ NDT Collection Only by uploading the layers, and get
                     ready to sell your collection.
                 </span>

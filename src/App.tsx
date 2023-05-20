@@ -11,6 +11,7 @@ import MainSection from "./sections/MainSection";
 import Popularity from "./sections/Popularity";
 import PromoSection from "./sections/PromoSection";
 import Animate from "./components/Animate";
+import { theme } from "./utils";
 
 const Components = [
     { El: Header, id: routes.home },
@@ -28,12 +29,13 @@ function App() {
     useEffect(() => {
         const loader = document.querySelector(".loader");
         if (loader) loader.remove();
+        theme.initiate();
     }, []);
 
     return (
         <main className="app-bg min-h-[100dvh] overflow-x-hidden max-w-full">
             <section className="max-w-6xl xl:px-0 px-4 flex center col mx-auto pb-8 md:gap-36 gap-12">
-                <div id="app-body" className="fixed inset-0 round-gradient"></div>
+                <div id="app-body" className="fixed inset-0 light round-gradient"></div>
                 {Components.map(({ El, id }, i) => (
                     <Animate id={id} n={i + 1} key={i}>
                         <El />
