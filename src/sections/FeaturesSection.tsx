@@ -38,7 +38,7 @@ export default function FeaturesSection() {
                             alt={card.title}
                         />
                         <h4 className="font-redzone text-2xl">{card.title}</h4>
-                        <span className="text-gray-300/60">{card.desc}</span>
+                        <span className="text-app_gray/70">{card.desc}</span>
                     </div>
                 ))}
             </div>

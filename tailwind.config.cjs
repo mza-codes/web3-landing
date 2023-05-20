@@ -4,14 +4,10 @@ module.exports = {
     content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
     theme: {
         extend: {
-            gradientColorStopPositions: {
-                10: "10%",
-                20: "20%",
-                70: "70%",
-            },
             colors: {
                 app: "#65d6f4",
                 app_bg: "#1d1b27",
+                app_gray: "#b9b8c1",
             },
         },
         fontFamily: {

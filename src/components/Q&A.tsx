@@ -22,8 +22,8 @@ export default function QAComponent({ question, answer }: QAProps) {
 
     const styles = {
         bg: isOpen ? "bg-app" : "",
-        heading: isOpen ? "text-app_bg" : "text-gray-300/90",
-        button: isOpen ? "text-app_bg" : "text-gray-300",
+        heading: isOpen ? "text-app_bg" : "text-app_gray/90",
+        button: isOpen ? "text-app_bg" : "text-app_gray",
         icon: isOpen ? (
             <AiOutlineMinus size={24} color="inherit" />
         ) : (

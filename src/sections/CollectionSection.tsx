@@ -6,7 +6,7 @@ export default function CollectionSection() {
         <section className="w-full flex flex-col md:flex-row gap-4 items-center">
             <div className="flex-[1] text-start col gap-4 items-start pr-4">
                 <Heading heading="Collection" subHeading="Bored apes NFT Items" />
-                <span className="text-gray-400/60">
+                <span className="text-app_gray/80">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo delectus
                     ad accusamus aut debitis consectetur sequi magnam? Eum, fuga?
                 </span>
